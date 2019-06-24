@@ -3,10 +3,10 @@
 namespace Stevepop\ChuckNorrisJokes\Tests;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
+use GuzzleHttp\Handler\MockHandler;
 use Stevepop\ChuckNorrisJokes\JokeFactory;
 
 class JokeFactoryTest extends TestCase
@@ -27,6 +27,4 @@ class JokeFactoryTest extends TestCase
 
         $this->assertSame('Chuck Norris is not hung like a horse. Horses are hung like Chuck Norris.', $joke);
     }
-
 }
-
