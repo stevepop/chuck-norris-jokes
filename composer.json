@@ -9,7 +9,9 @@
             "email": "stevepop@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
     "autoload": {
         "psr-4": {
             "Stevepop\\ChuckNorrisJokes\\": "src/"
@@ -21,6 +23,17 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5"
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "~3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Stevepop\\ChuckNorrisJokes\\ChuckNorrisJokesServiceProvider"
+            ],
+            "aliases": {
+                "ChuckNorris": "Stevepop\\ChuckNorrisJokes\\Facades\\CheckNorris"
+            }
+        }
     }
 }
