@@ -8,7 +8,6 @@ class JokeFactory
 {
     const API_ENDPOINT = 'https://api.icndb.com/jokes/random';
 
-
     /**
      * @var Client
      */
@@ -16,7 +15,6 @@ class JokeFactory
 
     public function __construct(Client $client = null)
     {
-
         $this->client = $client ?: new Client();
     }
 
