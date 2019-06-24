@@ -2,6 +2,8 @@
 
 Create a Chuck Norris Project.
 
+[![Build Status](https://travis-ci.org/stevepop/chuck-norris-jokes.svg?branch=master)](https://travis-ci.org/stevepop/chuck-norris-jokes)
+
 ## Installation
 
 Require the package using composer
