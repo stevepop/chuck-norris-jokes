@@ -7,7 +7,7 @@ use Stevepop\ChuckNorrisJokes\JokeFactory;
 
 class JokeFactoryTest extends TestCase
 {
-	/** @test **/
+    /** @test **/
     public function it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
