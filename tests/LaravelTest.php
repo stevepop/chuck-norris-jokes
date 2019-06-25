@@ -1,28 +1,26 @@
 <?php
 
-
 namespace Stevepop\ChuckNorrisJokes\Test;
 
-
-use Illuminate\Support\Facades\Artisan;
 use Orchestra\Testbench\TestCase;
-use Stevepop\ChuckNorrisJokes\ChuckNorrisJokesServiceProvider;
-use Stevepop\ChuckNorrisJokes\Console\ChuckNorrisJoke;
+use Illuminate\Support\Facades\Artisan;
 use Stevepop\ChuckNorrisJokes\Facades\ChuckNorris;
+use Stevepop\ChuckNorrisJokes\Console\ChuckNorrisJoke;
+use Stevepop\ChuckNorrisJokes\ChuckNorrisJokesServiceProvider;
 
 class LaravelTest extends TestCase
 {
     protected function getPackageProviders($app)
     {
         return [
-            ChuckNorrisJokesServiceProvider::class
+            ChuckNorrisJokesServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'ChuckNorris' => ChuckNorrisJoke::class
+            'ChuckNorris' => ChuckNorrisJoke::class,
         ];
     }
 
