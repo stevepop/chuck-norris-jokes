@@ -1,4 +1,5 @@
 build
+html
 vendor
 composer.lock
 .idea
