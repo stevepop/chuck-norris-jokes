@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Stevepop\ChuckNorrisJokes\Http\Controllers;
-
 
 use Stevepop\ChuckNorrisJokes\Facades\ChuckNorris;
 
